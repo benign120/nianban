@@ -1,0 +1,27 @@
+Nianban / 念办 0.3.0 — Third-party notices
+
+Vosk Android 0.3.75
+Source: https://github.com/alphacep/vosk-api
+Copyright: Alpha Cephei contributors and other upstream contributors.
+License: Apache License 2.0. This application uses the unmodified Android library.
+
+Chinese speech recognition model: vosk-model-small-cn-0.22
+Source: https://alphacephei.com/vosk/models
+License: Apache License 2.0 as listed by the model publisher.
+The model archive is redistributed without changes. Speech recognition runs locally.
+
+Java Native Access (JNA) 5.18.1
+Source: https://github.com/java-native-access/jna
+Copyright (c) 2007-2013 JNA Contributors; all rights reserved.
+Upstream is dual licensed under Apache-2.0 OR LGPL-2.1-or-later.
+This distribution uses the Apache License 2.0 option.
+
+The full Apache License 2.0 is included in APACHE-2.0.txt.
+Upstream notices and license files are included alongside this notice when provided.
+No endorsement by these projects is implied.
+
+The DeepSeek API is a remote service, not a redistributed model.
+Common supported task commands are interpreted on the phone without network requests.
+Only inputs requiring AI are sent to the official DeepSeek HTTPS API directly.
+Existing task summaries (up to 40) are included only for contextual modifications.
+Recorded audio remains on the phone.

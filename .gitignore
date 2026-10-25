@@ -1,0 +1,27 @@
+# Credentials and private runtime state
+.local/
+.env
+.env.*
+!.env.example
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+*.der
+# Generated and vendor binaries
+node_modules/
+toolchain/
+build/
+dist/
+qa/
+tmp/
+*.apk
+*.aab
+*.log
+*.sqlite*
+*.db
+__pycache__/
+.DS_Store
+Thumbs.db

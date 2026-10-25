@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@drawable/widget_background">
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical">
+    <TextView android:id="@+id/widget_brand" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="念办" android:textSize="20sp" android:textStyle="bold" android:textColor="#235E49"/>
+    <TextView android:id="@+id/widget_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="今天" android:textSize="12sp" android:textColor="#738078"/>
+  </LinearLayout>
+  <TextView android:id="@+id/widget_progress" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="今天，慢慢完成。" android:textSize="12sp" android:textColor="#738078" android:layout_marginTop="3dp" android:layout_marginBottom="6dp"/>
+  <TextView android:id="@+id/widget_empty" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="想到什么，就记下来。" android:textSize="14sp" android:textColor="#738078" android:paddingTop="12dp" android:paddingBottom="12dp"/>
+  <LinearLayout android:id="@+id/widget_row1" android:layout_width="match_parent" android:layout_height="40dp" android:gravity="center_vertical">
+    <TextView android:id="@+id/widget_check1" android:layout_width="40dp" android:layout_height="match_parent" android:gravity="center" android:text="○" android:textSize="23sp" android:textColor="#235E49"/>
+    <TextView android:id="@+id/widget_title1" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:gravity="center_vertical" android:textSize="14sp" android:textColor="#203B33" android:maxLines="1" android:ellipsize="end"/>
+  </LinearLayout>
+  <LinearLayout android:id="@+id/widget_row2" android:layout_width="match_parent" android:layout_height="40dp" android:gravity="center_vertical">
+    <TextView android:id="@+id/widget_check2" android:layout_width="40dp" android:layout_height="match_parent" android:gravity="center" android:text="○" android:textSize="23sp" android:textColor="#235E49"/>
+    <TextView android:id="@+id/widget_title2" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:gravity="center_vertical" android:textSize="14sp" android:textColor="#203B33" android:maxLines="1" android:ellipsize="end"/>
+  </LinearLayout>
+  <LinearLayout android:id="@+id/widget_row3" android:layout_width="match_parent" android:layout_height="40dp" android:gravity="center_vertical">
+    <TextView android:id="@+id/widget_check3" android:layout_width="40dp" android:layout_height="match_parent" android:gravity="center" android:text="○" android:textSize="23sp" android:textColor="#235E49"/>
+    <TextView android:id="@+id/widget_title3" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:gravity="center_vertical" android:textSize="14sp" android:textColor="#203B33" android:maxLines="1" android:ellipsize="end"/>
+  </LinearLayout>
+  <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:layout_marginTop="5dp">
+    <TextView android:id="@+id/widget_more" android:layout_width="0dp" android:layout_weight="1" android:layout_height="38dp" android:gravity="center_vertical" android:text="打开清单 ›" android:textSize="12sp" android:textColor="#738078"/>
+    <TextView android:id="@+id/widget_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/widget_button" android:text="＋ 记一句" android:textSize="13sp" android:textColor="#FFFFFF"/>
+  </LinearLayout>
+</LinearLayout>

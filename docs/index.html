@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="胡泽群的念办产品作品：一句话记任务、好友监督与桌面小组件，含产品海报、源码及 Android Demo。">
+<meta name="theme-color" content="#225b49">
+<title>念办 Nianban · 胡泽群个人产品作品</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f6f8f1;color:#193f32;font-family:"Microsoft YaHei",system-ui,sans-serif;line-height:1.8}a{color:inherit}main{max-width:1040px;margin:auto;padding:32px 24px 64px}header{display:flex;justify-content:space-between;gap:16px;align-items:center;color:#5d7368;font-size:14px}.version{border:1px solid #cadac2;border-radius:24px;padding:4px 13px;white-space:nowrap}.hero{padding:52px 0 32px}h1{font-size:clamp(44px,8vw,70px);line-height:1.15;margin:0 0 12px;letter-spacing:2px}h2{font-size:23px;margin:0 0 14px}.lead{font-size:clamp(22px,4.5vw,34px);font-weight:650;line-height:1.5;margin:0 0 14px}.intro{color:#5b7165;max-width:720px;margin:0}.actions{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0 8px}.button{display:inline-block;padding:11px 19px;border:1px solid #c5d5be;border-radius:12px;text-decoration:none;background:#fff;font-weight:600}.primary{background:#225b49;color:#fff;border-color:#225b49}.button:hover{filter:brightness(.96)}.button:focus-visible,a:focus-visible{outline:3px solid #94b982;outline-offset:4px}.notice{color:#64776b;font-size:14px;margin:14px 0 0}.poster{margin:20px 0 44px}.poster img{display:block;width:100%;height:auto;border-radius:20px;box-shadow:0 8px 30px #223e2910}figcaption{font-size:14px;color:#62786b;margin-top:12px}.section{padding:28px 0;border-top:1px solid #d3dfcb}.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}.cols h3{font-size:18px;margin:0 0 7px}.cols p{margin:0;color:#597061}.section p{margin:0 0 12px}.flow{background:#e9efdf;border-radius:14px;padding:20px;font-size:16px;margin:18px 0;overflow-wrap:anywhere}.muted{color:#63776b}footer{padding-top:30px;color:#64786b;font-size:13px}footer a{margin-right:18px}summary{cursor:pointer;font-weight:600}details p{padding-top:12px}@media(max-width:640px){main{padding:24px 18px 40px}.hero{padding:36px 0 24px}.cols{grid-template-columns:1fr;gap:22px}.actions{gap:9px}.button{padding:10px 14px;font-size:14px}.poster img{border-radius:12px}header{font-size:12px}.version{padding:3px 9px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body><main>
+<header><span>胡泽群 · 个人产品作品</span><span class="version">Android Demo · 0.6.0</span></header>
+<section class="hero"><h1>念办 Nianban</h1><p class="lead">一句话记任务，和搭子一起完成。</p><p class="intro">从个人学习与求职中的记事需求出发，借助 AI 协作实现的任务助手。把自然语言变成清晰待办，再用主动分享与打卡反馈帮助执行。</p>
+<nav class="actions" aria-label="作品材料"><a class="button primary" href="#poster">查看产品海报</a><a class="button" href="assets/nianban-portfolio.pdf">阅读产品介绍 PDF</a><a class="button" href="https://github.com/benign120/nianban/releases/download/v0.6.0/nianban-0.6.0.apk">下载 Android APK</a><a class="button" href="https://github.com/benign120/nianban">查看 GitHub 源码</a></nav>
+<p class="notice">这里是作品展示页。实际功能请安装 Android Demo；项目处于个人内测阶段。</p></section>
+<figure class="poster" id="poster"><a href="assets/nianban-poster.png" target="_blank" rel="noopener" aria-label="打开念办海报原图"><img src="assets/nianban-poster.png" width="1200" height="1949" alt="念办产品海报，展示一句话记任务、好友监督、云端同步与个人参与内容"></a><figcaption>点击海报查看原图。界面采用演示数据。</figcaption></figure>
+<section class="section"><h2>围绕实际使用做取舍</h2><div class="cols"><article><h3>简单安排直接记</h3><p>常见表达本地解析，复杂表达才调用 DeepSeek；歧义时间由用户确认。</p></article><article><h3>分享由自己选择</h3><p>邀请码申请、双方同意后关联，只共享主动选择的任务，支持撤回和结束关系。</p></article><article><h3>让执行更顺手</h3><p>今日清单、完成反馈和桌面小组件，让任务从记录进入执行与回顾。</p></article></div></section>
+<section class="section"><h2>我的参与</h2><p>提出个人使用需求与功能想法，根据实际体验提出界面和流程修改，借助 Codex 协作实现并持续迭代。</p><p class="muted">代码实现、模型接入、云端部署和自动化联调使用 AI 协作；个人贡献集中在需求方向、功能选择、体验反馈和验收。</p></section>
+<section class="section"><h2>手机本地任务与云端协作</h2><div class="flow">文字 / 语音 → 本地解析或 DeepSeek → 校验与确认 → 手机保存与提醒<br>两台手机 → HTTPS 云函数 → 私有数据库 → 获取获准共享的进度</div><p class="muted">个人任务保存在手机；云端只交换共享任务、搭子关系和互动。模型密钥不通过搭子同步上传。</p></section>
+<section class="section"><h2>目前验证到哪一步</h2><p>已经交付可安装 APK，搭子服务真实 HTTPS 接口联调通过；桌面小组件完成日期与状态逻辑测试。</p><details><summary>查看内测边界</summary><p class="muted">好友进度在打开 / 返回 App、手动刷新及前台每分钟更新，不支持关闭 App 后的即时推送。新版两台手机异地使用、不同桌面启动器、锁屏与重启后的提醒送达仍待实际设备验证。预编译 APK 使用有限开发测试环境，存在额度、有效期与可用性限制。没有规模用户或留存提升数据。</p></details></section>
+<footer><a href="https://github.com/benign120/nianban">GitHub 仓库</a><a href="https://github.com/benign120/nianban/releases/tag/v0.6.0">安装包与版本说明</a><span>Hu Zequn · Nianban</span></footer>
+</main></body></html>
